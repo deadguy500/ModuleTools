@@ -193,7 +193,7 @@ int main(int argc,char *argv[])
 
     if (argc != 2) 
     {
-        printf("Usage: %s [OPTION] <INPUT MODULE> <OUTPUT MODULE>\n", argv[0]);
+        printf("Usage: %s <INPUT MODULE>\n", argv[0]);
         printf("Removed E8x and 8xx Protracker commands.\n\n");
         //printf("   -p  Shows where the sync command are set\n\n");
         printf("Report no bugs to deadguy / pacif!c\n");
@@ -220,7 +220,7 @@ int main(int argc,char *argv[])
                     if(module_data)
                     {
                         remove_sync_commands(module_data);
-                        write_module(module_data, "/Users/deadguy/Desktop/output.mod");
+                        write_module(module_data, "./syncremover-output.mod");
                     }
                 }
                 else
